@@ -5,6 +5,9 @@ button.addEventListener("click", onClick);
 
 function onClick(){
     let inputText = textField.value;
+    if(inputText < 7 || inputText > 7){
+        window.alert("Geben sie genau 7 Stellen ein");
+    }else{
     let Ergebnis = "";
     for(let i of inputText){
         let toAscii = toASCII(i);
@@ -12,6 +15,7 @@ function onClick(){
     }
     Ergebnis = Ergebnis.slice(0, -2);
     window.alert(Ergebnis);
+    }
 }
 
 function toASCII(char){
