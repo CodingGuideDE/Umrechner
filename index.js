@@ -5,6 +5,7 @@ button.addEventListener("click", onClick);
 
 function onClick(){
     let inputText = textField.value;
+    textField.value = "";
     if(inputText < 7 || inputText > 7){
         window.alert("Geben sie genau 7 Stellen ein");
     }else{
