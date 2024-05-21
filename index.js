@@ -7,7 +7,7 @@ function onClick(){
     let inputText = textField.value;
     inputText = inputText.toUpperCase();
     textField.value = "";
-    if(inputText.lenght < 7 || inputText.lenght > 7){
+    if(inputText.length < 7 || inputText.length > 7){
         window.alert("Geben sie genau 7 Stellen ein");
     }else{
     let Ergebnis = "";
